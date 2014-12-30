@@ -15,6 +15,20 @@ pip install tweepy
 pip install pyserial
 pip install -U textblob
 ```
+##Running 
+Register an app with [Twitter](https://dev.twitter.com/ "Twitter Dev"). Copy and paste your consumer key, consumer secret, access token and access token secret into lines 24-27 in getTweets.py. 
+
+Wire the Arduino according to the schematic (shown below). Upload twitterComm.ino to the Ardunio. Find the serial port your Arduino is using. In getTweets.py change the serial port (line 30) to what your Arduino is using. 
+
+In the command line change to the directory where you downloaded the source code. Now, if you type `python getTweets.py` in the command you will see the following:
+
+```
+Serial name is: COM7
+Successfully authenticated
+```
+NOTE: your serial name might be different ex. COM12
+
+It might take up to 10 seconds for the LED to initially turn on so please be patient. 
 
 ##Materials
 You will need:
