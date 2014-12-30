@@ -1,0 +1,54 @@
+[
+    {"text": "Just has some awesome pizza!", "label":"happy"},
+    {"text": "I love roller coasters", "label":"happy"},
+    {"text": "Its graduation day! Im so excited to be sharing this day with all my friends. Thank you to all my family and friends for always supporting me!", "label":"happy"},
+    {"text": "Thanks for a great semester!", "label":"happy"},
+    {"text": "Its my first day with the Arduino and I am having so much fun", "label":"happy"},
+    {"text": "We finally won the race! Go Hawks!", "label":"happy"},
+    {"text": "Another vicotry for the Eagles!", "label":"happy"},
+    {"text": "Happy New Year!", "label":"happy"},
+    {"text": "Congrats", "label":"happy"},
+    {"text": "Are you excited for NYC?!", "label":"happy"},
+    {"text": "Warm coffee is great in the winter", "label":"happy"},
+
+
+    {"text": "Cant beleive my childhood dream has come true!", "label":"surprise"},
+    {"text": "Saw my favorite singer today!", "label":"surprise"},
+    {"text": "AHHH! Just got a new car", "label":"surprise"},
+    {"text": "Just won a free vacation to Jamaica!", "label":"surprise"},
+    {"text": "Cant believe I won the state competition!", "label":"surprise"},
+    {"text": "Surprise!", "label":"surprise"},
+    {"text": "Cant believe the Sea Hawks won!", "label":"surprise"},
+    {"text": "A 5 year old just beat me at chess!", "label":"surprise"},
+    {"text": "Turtles can live more than 100 years?! What a life they must have", "label":"surprise"},
+    {"text": "Just won the lottery!", "label":"surprise"},
+    {"text": "Found my id after 4 weeks", "label":"surprise"},
+
+
+    {"text": "Its not a good day ", "label":"sad"},
+    {"text": "I just had a nightmare", "label":"sad"},
+    {"text": "Just fell down the stairs again for the third time in a week", "label":"sad"},
+    {"text": "Lost my bet. Why does this always happen?!", "label":"sad"},
+    {"text": "Feeling a fever come along. I should not have spent all day in the snow", "label":"sad"},
+    {"text": "Im so scared of the dark", "label":"sad"},
+    {"text": "Im stranded in an unknown place and dont know the local language. Please Help!", "label":"sad"},
+    {"text": "Just lost the race", "label":"sad"},
+    {"text": "I miss the old tree house down the street", "label":"sad"},
+    {"text": "His story broke my heart", "label":"sad"},
+    {"text": "I dont know what to do", "label":"sad"},
+    {"text": "Im so bored", "label":"sad"},
+    
+
+
+    {"text": "What do I have to do to get decent food in this town?", "label":"anger"},
+    {"text": "What was he thinking?", "label":"anger"},
+    {"text": "Even after multiple phone calls, the inspector has not done anything to find the criminal. What has the nation come to?", "label":"anger"},
+    {"text": "We cant get anything done!", "label":"anger"},
+    {"text": "I hate people who think they know everything", "label":"anger"},
+    {"text": "For the person who stole my pancakes, I hope you enjoyed it. I know I would have because that was my only meal of the day!", "label":"anger"},
+    {"text": "Another day without electricity yet we dont do anything to improve our situation", "label":"anger"},
+    {"text": "So many people die of starvation and you are here everyday wasting plates of food!", "label":"anger"},
+    {"text": "If he comes back again, I swear Im going to call the cops", "label":"anger"},
+    {"text": "how many people have to leave before you realize we need to change the rules", "label":"anger"},
+    {"text": "Are you kidding me? That was the worst pass I've seen", "label":"anger"}
+]
