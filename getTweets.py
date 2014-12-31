@@ -21,10 +21,10 @@ from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
 from textblob.classifiers import NaiveBayesClassifier
 
-consumer_key = 
-consumer_secret = 
-access_token = 
-access_token_secret = 
+consumer_key = #ADD YOUR CONSUMER KEY
+consumer_secret = #ADD YOUR CONSUMER SECRET
+access_token = #ADD YOUR ACCESS TOKEN
+access_token_secret =  #ADD YOUR ACCESS TOKEN SECRET 
 
 #Connect to Arduino
 ser = serial.Serial("COM7")
@@ -41,7 +41,7 @@ class Listener(StreamListener):
 	numberOfTweets = 0
 
 	def on_data(self, data):
-		"""Saves up to 500 tweets in dataFile """
+		"""Saves up to 50 tweets in dataFile """
 		if self.numberOfTweets < 50:
 			tweet = (data.split(',"text":')[1]).split(',"source"')[0] 
 			with open(dataFile, 'a') as f:
