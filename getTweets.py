@@ -48,7 +48,6 @@ class Listener(StreamListener):
 				f.write(tweet + '\n')
 			self.numberOfTweets = self.numberOfTweets + 1
 		else:
-			print "---------EXCEEDED 50 Tweets--------"
 			return False
 
 	def on_error(self, status):
@@ -59,7 +58,6 @@ def connectStream():
 	"""Connect to stream endpoint"""
 	twitterStream = Stream(auth, Listener())
 	twitterStream.sample(languages=['en'])
-	print "Disconnected from stream"
 
 
 def getTopEmotion():
@@ -74,7 +72,6 @@ def getTopEmotion():
 	#empty dataFile
 	open(dataFile, 'w').close()
 
-	print emotions
 	numHappy = emotions.count('happy')
 	numSad = emotions.count('sad')
 	numSurprise = emotions.count('surprise')
@@ -83,16 +80,12 @@ def getTopEmotion():
 	print "Top emotion count is " + str(topEmotion)
 
 	if(topEmotion == numHappy):
-		print "General mood is Happy"
 		return "Happy"
 	elif(topEmotion == numSad):
-		print "Everyone is Sad"
 		return "Sad"
 	elif(topEmotion == numSurprise):
-		print "Everyone is Surprised"
 		return "Surprise"
 	elif(topEmotion == numAngry):
-		print "Everyone is Angry"
 		return "Anger"
 
 
@@ -107,12 +100,16 @@ def commSerial(twitterMood):
 		Pre: twitterMood is type string of the above emotions"""
 
 	if twitterMood == "Happy":
+		print "Happy"
 		ser.write('1')
 	elif twitterMood == "Sad":
+		print "Sad"
 		ser.write('2')
 	elif twitterMood == "Surprise":
+		print "Surprise"
 		ser.write('3')
 	elif twitterMood == "Anger":
+		print "Anger"
 		ser.write('4')
 
 	#delay sometime for light to show
@@ -135,6 +132,7 @@ if __name__ == '__main__':
 	#Main loop
 	while True:
 		connectStream()
+		print "Calculating most common emotion..."
 		topMood = getTopEmotion()
 		commSerial(topMood)
 		time.sleep(10)
