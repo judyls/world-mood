@@ -32,11 +32,6 @@ In the command line change to the directory where you downloaded the source code
 ```
 Serial name is: COM7
 Successfully authenticated
-```
-after about 8 seconds your command line should be similar to the following:
-```
-Serial name is: COM7
-Successfully authenticated
 Calculating most common emotion...
 Top emotion count is 17
 Happy
