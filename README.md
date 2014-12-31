@@ -16,9 +16,16 @@ pip install pyserial
 pip install -U textblob
 ```
 ##Running 
+
+**Register with Twitter**
+
 Register an app with [Twitter](https://dev.twitter.com/ "Twitter Dev"). Copy and paste your consumer key, consumer secret, access token and access token secret into lines 24-27 in getTweets.py. 
 
+**Build Circuit**
+
 Wire the Arduino according to the schematic (shown below). Upload twitterComm.ino to the Ardunio. Find the serial port your Arduino is using. In getTweets.py change the serial port (line 30) to what your Arduino is using. 
+
+**Using Command Line**
 
 In the command line change to the directory where you downloaded the source code. Now, if you type `python getTweets.py` in the command line you will see the following:
 
@@ -26,7 +33,7 @@ In the command line change to the directory where you downloaded the source code
 Serial name is: COM7
 Successfully authenticated
 ```
-after some about 8 seconds your command line should be similar to the following:
+after about 8 seconds your command line should be similar to the following:
 ```
 Serial name is: COM7
 Successfully authenticated
@@ -35,9 +42,7 @@ Top emotion count is 17
 Happy
 ```
 
-NOTE: your serial name might be different ex. COM12. In addition the emotion count and final emotion might be different.
-
-It might take up to 10 seconds for the LED to initially turn on so please be patient. 
+NOTE: your serial name might be different ex. COM12. In addition the emotion count and final emotion might be different. It might take up to 10 seconds for the LED to initially turn on so please be patient. 
 
 ##Materials
 You will need:
