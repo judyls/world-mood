@@ -15,6 +15,19 @@ pip install tweepy
 pip install pyserial
 pip install -U textblob
 ```
+##Materials
+You will need:
+
+* Arduino (any model will do)
+* Tricolor RGB LED
+* 3 220 Ohm Resistors
+* Wires
+
+##Schematic
+Wire the Ardunio as shown in the schematic. Make sure each LED pin is connected to the right pin 
+on the Arduino.
+![Schematic](https://github.com/judyls/world-mood/blob/master/schematic.png)
+
 ##Running 
 
 **Register with Twitter**
@@ -23,7 +36,7 @@ Register an app with [Twitter](https://dev.twitter.com/ "Twitter Dev"). Copy and
 
 **Build Circuit**
 
-Wire the Arduino according to the schematic (shown below). Upload twitterComm.ino to the Ardunio. Find the serial port your Arduino is using. In getTweets.py change the serial port (line 30) to what your Arduino is using. 
+Wire the Arduino according to the schematic (shown above). Upload twitterComm.ino to the Ardunio. Find the serial port your Arduino is using. In getTweets.py change the serial port (line 30) to what your Arduino is using. 
 
 **Using Command Line**
 
@@ -39,17 +52,6 @@ Happy
 
 NOTE: your serial name might be different ex. COM12. In addition the emotion count and final emotion might be different. It might take up to 10 seconds for the LED to initially turn on so please be patient. 
 
-##Materials
-You will need:
-
-* Arduino (any model will do)
-* Tricolor RGB LED
-* 3 220 Ohm Resistors
-* Wires
-
-##Schematic
-Wire the Ardunio as shown in the schematic. Make sure each LED pin is connected to the right pin 
-on the Arduino (it is important to show the right colors)
 
 ##Additional ideas
 It might be wise to play around with the training set at train.json. The accuracy of each mood depends on the quality of the 
