@@ -26,6 +26,7 @@ You will need:
 ##Schematic
 Wire the Ardunio as shown in the schematic. Make sure each LED pin is connected to the right pin 
 on the Arduino.
+
 ![Schematic](https://github.com/judyls/world-mood/blob/master/schematic.png)
 
 ##Running 
